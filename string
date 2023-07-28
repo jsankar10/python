@@ -1,0 +1,31 @@
+while True:
+    str=input("Enter a string:")
+    print("1.string length")
+    print("2.Upper to lower")
+    print("3.Lower to upper")
+    print("4.Replace string with others")
+    print("5.Replace char with others")
+    choise = int(input("Enter your choice:"))
+    match choise:
+        case 1:
+            print(len(str))
+        case 2:
+            print(str.lower())
+        case 3:
+            print(str.upper())
+        case 4:
+            str1=input("Enter new string")
+            print(str.replace(str,str1))
+        case 5:
+            str1=input("in"+str+",What character you want to change:")
+            str2=input("What character you want to replace:")
+            result =""
+            for i in range(len(str)):
+                if(str[i]==str1):
+                    result = result + str2
+                else:
+                    result = result +str[i]
+            print("\nModified string:",result)
+
+    if input("do you want to continue (y/n)") !='y':
+        break
