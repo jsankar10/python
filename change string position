@@ -1,0 +1,10 @@
+students=[
+    'joku',
+    'jeevan',
+    'jsankar',
+    'sreehari'
+]
+first=students.index('sreehari')
+item=students.pop(first)
+students.insert(0,item)
+print(students)
